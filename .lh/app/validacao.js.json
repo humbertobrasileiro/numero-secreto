@@ -1,0 +1,26 @@
+{
+    "sourceFile": "app/validacao.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1724345927858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1724347917505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,39 @@\n+function verificaSeOChutePossuiUmValorValido(chute) {\r\n+  const numero = +chute\r\n+\r\n+  if (chuteForInvalido(numero)) {\r\n+      elementoChute.innerHTML += '<div>Valor inválido</div>'\r\n+      return\r\n+  }\r\n+\r\n+  if (numeroForMaiorOuMenorQueOValorPermitido(numero)) {\r\n+      elementoChute.innerHTML += `\r\n+      <div>Valor inválido: Fale um número entre ${menorValor} e ${maiorValor}</div>\r\n+      `\r\n+      return\r\n+  }\r\n+\r\n+  if (numero === numeroSecreto) {\r\n+      document.body.innerHTML = `\r\n+          <h2>Você acertou!</h2>\r\n+          <h3>O número secreto era ${numeroSecreto}</h3>\r\n+      `\r\n+  } else if (numero > numeroSecreto) {\r\n+      elementoChute.innerHTML += `\r\n+      <div>O número secreto é menor <i class=\"fa-solid fa-down-long\"></i></div>\r\n+      `\r\n+  } else {\r\n+      elementoChute.innerHTML += `\r\n+      <div>O número secreto é maior <i class=\"fa-solid fa-up-long\"></i></div>\r\n+      `\r\n+  }\r\n+\r\n+}\r\n+\r\n+function chuteForInvalido(numero) {\r\n+  return Number.isNaN(numero)\r\n+}\r\n+\r\n+function numeroForMaiorOuMenorQueOValorPermitido(numero){\r\n+  return numero > maiorValor || numero < menorValor\r\n+}\r\n"
+                },
+                {
+                    "date": 1724348176186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n   if (numero === numeroSecreto) {\r\n       document.body.innerHTML = `\r\n           <h2>Você acertou!</h2>\r\n           <h3>O número secreto era ${numeroSecreto}</h3>\r\n+          <button id=\"jogar-novamente\" class=\"btn-jogar\">Jogar novamente</button>\r\n       `\r\n   } else if (numero > numeroSecreto) {\r\n       elementoChute.innerHTML += `\r\n       <div>O número secreto é menor <i class=\"fa-solid fa-down-long\"></i></div>\r\n"
+                }
+            ],
+            "date": 1724345927858,
+            "name": "Commit-0",
+            "content": "function verificaSeOChutePossuiUmValorValido(chute) {\r\n  const numero = +chute\r\n\r\n  if (Number.isNaN(numero)) {\r\n    console.log('valor inválido')\r\n  }\r\n}"
+        }
+    ]
+}

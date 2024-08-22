@@ -1,0 +1,46 @@
+{
+    "sourceFile": "app/sortearNumero.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1724336398377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1724336673464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,7 @@\n-console.log('estou aqui');\n\\ No newline at end of file\n+const numeroSecreto = gerarNumeroAleatorio();\r\n+\r\n+function gerarNumeroAleatorio() {\r\n+  return parseInt(Math.random() * 100);\r\n+}\r\n+\r\n+console.log(numeroSecreto);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1724336786732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n-const numeroSecreto = gerarNumeroAleatorio();\r\n+const menorValor = 1\r\n+const maiorValor = 100\r\n+const numeroSecreto = gerarNumeroAleatorio()\r\n \r\n function gerarNumeroAleatorio() {\r\n-  return parseInt(Math.random() * 100);\r\n\\ No newline at end of file\n+  return parseInt(Math.random() * 100)\r\n }\r\n \r\n-console.log(numeroSecreto);\n+console.log(numeroSecreto)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1724336946142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,13 @@\n const maiorValor = 100\r\n const numeroSecreto = gerarNumeroAleatorio()\r\n \r\n function gerarNumeroAleatorio() {\r\n-  return parseInt(Math.random() * 100)\r\n+  return parseInt(Math.random() * maiorValor + 1)\r\n }\r\n \r\n\\ No newline at end of file\n-console.log(numeroSecreto)\n+console.log(numeroSecreto)\r\n+\r\n+const elementoMenorValor = document.getElementById('menor-valor');\r\n+elementoMenorValor.innerHTML = menorValorconst \r\n+const elementoMaiorValor = document.getElementById('maior-valor');\r\n+elementoMaiorValor.innerHTML = maiorValor\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1724336973375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n const menorValor = 1\r\n-const maiorValor = 100\r\n+const maiorValor = 1000\r\n const numeroSecreto = gerarNumeroAleatorio()\r\n \r\n function gerarNumeroAleatorio() {\r\n   return parseInt(Math.random() * maiorValor + 1)\r\n@@ -8,7 +8,8 @@\n \r\n console.log(numeroSecreto)\r\n \r\n const elementoMenorValor = document.getElementById('menor-valor');\r\n-elementoMenorValor.innerHTML = menorValorconst \r\n+elementoMenorValor.innerHTML = menorValor\r\n+\r\n const elementoMaiorValor = document.getElementById('maior-valor');\r\n elementoMaiorValor.innerHTML = maiorValor\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1724337040450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n const menorValor = 1\r\n-const maiorValor = 1000\r\n+const maiorValor = 100\r\n const numeroSecreto = gerarNumeroAleatorio()\r\n \r\n function gerarNumeroAleatorio() {\r\n   return parseInt(Math.random() * maiorValor + 1)\r\n"
+                },
+                {
+                    "date": 1724337263781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n const menorValor = 1\r\n-const maiorValor = 100\r\n+const maiorValor = 1000\r\n const numeroSecreto = gerarNumeroAleatorio()\r\n \r\n function gerarNumeroAleatorio() {\r\n   return parseInt(Math.random() * maiorValor + 1)\r\n }\r\n \r\n console.log(numeroSecreto)\r\n \r\n-const elementoMenorValor = document.getElementById('menor-valor');\r\n+const elementoMenorValor = document.getElementById('menor-valor')\r\n elementoMenorValor.innerHTML = menorValor\r\n \r\n-const elementoMaiorValor = document.getElementById('maior-valor');\r\n+const elementoMaiorValor = document.getElementById('maior-valor')\r\n elementoMaiorValor.innerHTML = maiorValor\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1724347950771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+const menorValor = 1\r\n+const maiorValor = 1000\r\n+const numeroSecreto = gerarNumeroAleatorio()\r\n+\r\n+function gerarNumeroAleatorio() {\r\n+    return parseInt(Math.random() * maiorValor + 1)\r\n+}\r\n+\r\n+console.log('Número Secreto:', numeroSecreto)\r\n+\r\n+const elementoMenorValor = document.getElementById('menor-valor')\r\n+elementoMenorValor.innerHTML = menorValor\r\n+\r\n+const elementoMaiorValor = document.getElementById('maior-valor')\r\n+elementoMaiorValor.innerHTML = maiorValor\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1724336398377,
+            "name": "Commit-0",
+            "content": "console.log('estou aqui');"
+        }
+    ]
+}
