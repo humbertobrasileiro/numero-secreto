@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 18,
+            "activePatchIndex": 19,
             "patches": [
                 {
                     "date": 1724338843293,
@@ -80,6 +80,10 @@
                 {
                     "date": 1724347988332,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,24 @@\n-const elementoChute = document.getElementById('chute');\r\n+const elementoChute = document.getElementById('chute')\r\n \r\n-window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition\r\n+window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;\r\n \r\n-const recognition = new SpeechRecognition()\r\n-recognition.lang = 'pt-br'\r\n+const recognition = new SpeechRecognition();\r\n+recognition.lang = 'pt-Br'\r\n recognition.start()\r\n \r\n recognition.addEventListener('result', onSpeak)\r\n \r\n function onSpeak(e) {\r\n-  let chute = e.results[0][0].transcript\r\n-  exibeChuteNaTela(chute)\r\n+    chute = e.results[0][0].transcript\r\n+    exibeChuteNaTela(chute)\r\n+    verificaSeOChutePossuiUmValorValido(chute)\r\n+}\r\n \r\n-  verificaSeOChutePossuiUmValorValido(chute)\r\n\\ No newline at end of file\n+function exibeChuteNaTela(chute) {\r\n+    elementoChute.innerHTML = `\r\n+        <div>Você disse</div>\r\n+        <span class=\"box\">${chute}</span>\r\n+     `\r\n }\r\n \r\n-function exibeChuteNaTela(chute) {\r\n-  elementoChute.innerHTML = `\r\n-    <div>Você disse:</div>\r\n-    <span class=\"box\">${chute}</span>\r\n-  `\r\n-}\n+recognition.addEventListener('end', () => recognition.start())\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1724349930311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,19 +20,5 @@\n         <span class=\"box\">${chute}</span>\r\n      `\r\n }\r\n \r\n-recognition.addEventListener('end', () => recognition.start())\n-window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition\r\n-\r\n-const recognition = new SpeechRecognition()\r\n-recognition.lang = 'pt-br'\r\n-recognition.start()\r\n-\r\n-const speechRecognitionList = new SpeechGrammarList()\r\n-window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition\r\n-\r\n-const recognition = new SpeechRecognition()\r\n-recognition.lang = 'pt-br'\r\n-recognition.start()\r\n-\r\n-const speechRecognitionList = new SpeechGrammarList()\n\\ No newline at end of file\n+recognition.addEventListener('end', () => recognition.start())\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1724338843293,

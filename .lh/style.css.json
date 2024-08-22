@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1724347883429,
@@ -12,6 +12,10 @@
                 {
                     "date": 1724348238014,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,5 +42,13 @@\n   display: inline-block;\r\n   font-size: 4em;\r\n   padding: 10px;\r\n   margin: 20px;\r\n+}\r\n+\r\n+.btn-jogar {\r\n+  padding: 8px 15px;\r\n+  border: 0;\r\n+  background: var(--primary-color);\r\n+  border-radius: 5px;\r\n+  margin-top: 20px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1724349895353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,54 +1,54 @@\n @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');\r\n \r\n :root {\r\n-  --font-family: 'Montserrat', sans-serif;\r\n-  --bg-color: #0AA1DD;\r\n-  --primary-color: #E8F9FD;\r\n+    --font-family: 'Montserrat', sans-serif;\r\n+    --bg-color: #0AA1DD;\r\n+    --primary-color: #E8F9FD;\r\n }\r\n \r\n body {\r\n-  background-color: var(--bg-color);\r\n-  color: var(--primary-color);\r\n-  min-height: 100vh;\r\n-  display: flex;\r\n-  flex-direction: column;\r\n-  align-items: center;\r\n-  justify-content: center;\r\n-  text-align: center;\r\n-  margin: 0;\r\n-  font-family: var(--font-family);\r\n+    background-color: var(--bg-color);\r\n+    color: var(--primary-color);\r\n+    min-height: 100vh;\r\n+    display: flex;\r\n+    flex-direction: column;\r\n+    align-items: center;\r\n+    justify-content: center;\r\n+    text-align: center;\r\n+    margin: 0;\r\n+    font-family: var(--font-family);\r\n }\r\n \r\n h1 {\r\n-  font-size: 5em;\r\n+    font-size: 5em;\r\n }\r\n \r\n h2 {\r\n-  font-size: 4em;\r\n+    font-size: 4em;\r\n }\r\n \r\n h3 {\r\n-  font-size: 2em;\r\n-  margin-top: 20px;\r\n+    font-size: 2em;\r\n+    margin-top: 20px;\r\n }\r\n \r\n .mensagem {\r\n-  font-size: 1.5em;\r\n-  margin-top: 40px;\r\n\\ No newline at end of file\n+    font-size: 1.5em;\r\n+    margin-top: 40px;\r\n }\r\n \r\n .box {\r\n-  border: 2px solid var(--primary-color);\r\n-  display: inline-block;\r\n-  font-size: 4em;\r\n-  padding: 10px;\r\n-  margin: 20px;\r\n+    border: 2px solid var(--primary-color);\r\n+    display: inline-block;\r\n+    font-size: 4em;\r\n+    padding: 10px;\r\n+    margin: 20px;\r\n }\r\n \r\n-.btn-jogar {\r\n-  padding: 8px 15px;\r\n-  border: 0;\r\n-  background: var(--primary-color);\r\n-  border-radius: 5px;\r\n-  margin-top: 20px;\r\n-}\n+.btn-jogar{\r\n+    padding: 8px 15px;\r\n+    border: 0;\r\n+    background: var(--primary-color);\r\n+    border-radius: 5px;\r\n+    margin-top: 20px;\r\n+}\r\n"
                 }
             ],
             "date": 1724347883429,
